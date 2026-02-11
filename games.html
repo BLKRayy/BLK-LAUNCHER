@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>BLK Launcher – Games</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="top-bar">
+    <div class="logo">BLK Launcher</div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="games.html" class="active">Games</a>
+      <a href="favorites.html">Favorites</a>
+      <a href="admin.html">Admin</a>
+    </nav>
+    <div class="top-right">
+      <select id="profile-select"></select>
+      <button id="profile-new-btn">+ Profile</button>
+      <button id="os-mode-btn">OS Mode</button>
+    </div>
+  </header>
+
+  <main class="main-layout">
+    <section class="panel">
+      <h2>Games</h2>
+      <div class="search-row">
+        <input id="game-search" placeholder="Search games..." />
+      </div>
+      <div id="category-chips" class="chips">
+        <button class="chip active" data-cat="all">All</button>
+        <button class="chip" data-cat="racing">Racing</button>
+        <button class="chip" data-cat="action">Action</button>
+        <button class="chip" data-cat="sports">Sports</button>
+        <button class="chip" data-cat="puzzle">Puzzle</button>
+        <button class="chip" data-cat="retro">Retro</button>
+      </div>
+      <div id="games-list" class="games-grid"></div>
+    </section>
+  </main>
+
+  <!-- Viewer shared -->
+  <div id="game-viewer" class="viewer viewer-hidden">
+    <div class="viewer-header">
+      <span id="viewer-title">Playing...</span>
+      <span id="viewer-session-time">00:00:00</span>
+      <div class="viewer-actions">
+        <button id="viewer-fav-btn">☆ Favorite</button>
+        <select id="viewer-save-slot">
+          <option value="1">Slot 1</option>
+          <option value="2">Slot 2</option>
+          <option value="3">Slot 3</option>
+        </select>
+        <button id="viewer-save-btn">Save</button>
+        <button id="viewer-load-btn">Load</button>
+        <button id="viewer-fullscreen-btn">Fullscreen</button>
+        <button id="viewer-close-btn">Close</button>
+      </div>
+    </div>
+    <iframe id="viewer-frame" src="" frameborder="0"></iframe>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
