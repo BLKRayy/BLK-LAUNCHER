@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>BLK Launcher – Admin</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="top-bar">
+    <div class="logo">BLK Launcher</div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="games.html">Games</a>
+      <a href="favorites.html">Favorites</a>
+      <a href="admin.html" class="active">Admin</a>
+    </nav>
+  </header>
+
+  <main class="main-layout">
+    <section class="panel">
+      <h2>Admin Login</h2>
+      <div id="admin-content" class="admin-locked">
+        <input type="password" id="admin-password" placeholder="Admin password" />
+        <button id="admin-login-btn">Login</button>
+        <p id="admin-error" class="error"></p>
+      </div>
+    </section>
+  </main>
+
+  <script src="admin.js"></script>
+</body>
+</html>
