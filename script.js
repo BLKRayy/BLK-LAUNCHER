@@ -1,3 +1,8 @@
+// Emergency reset
+if (location.search.includes("reset=1")) {
+  localStorage.removeItem("blk_lockdown");
+}
+
 // BLK Launcher – main script
 
 const ADMIN_PASSWORD = "loyal";
@@ -470,14 +475,24 @@ function initLockdownOverlay() {
   };
 
   submit.onclick = () => {
-    if (passInput.value === ADMIN_PASSWORD) {
-      setLockdown(null);
-      popup.classList.add("lockdown-popup-hidden");
-      overlay.classList.add("lockdown-hidden");
-    } else {
-      err.textContent = "Incorrect password.";
-    }
-  };
+  if (passInput.value === ADMIN_PASSWORD) {
+    // Completely remove lockdown data
+    localStorage.removeItem("blk_lockdown");
+
+    // Hide popup
+    popup.classList.add("lockdown-popup-hidden");
+
+    // Hide overlay
+    overlay.classList.add("lockdown-hidden");
+
+    // Reset fields
+    passInput.value = "";
+    err.textContent = "";
+  } else {
+    err.textContent = "Incorrect password.";
+  }
+};
+
 }
 
 // ---------- INIT ----------
