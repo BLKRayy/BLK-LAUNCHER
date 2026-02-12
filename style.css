@@ -1,22 +1,82 @@
+/* ===========================
+   GLOBAL
+=========================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background: #000;
   color: #fff;
   font-family: Arial, sans-serif;
-  margin: 0;
+  overflow-x: hidden;
 }
 
+h1, h2, h3 {
+  color: #ff0033;
+  margin-bottom: 10px;
+}
+
+button {
+  background: #ff0033;
+  border: none;
+  padding: 8px 14px;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #ff3355;
+}
+
+input, select {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #333;
+  background: #111;
+  color: #fff;
+}
+
+/* ===========================
+   TOP BAR
+=========================== */
 .top-bar {
   background: #111;
-  padding: 10px;
-  text-align: center;
-  border-bottom: 1px solid #333;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #222;
 }
 
 .logo {
-  font-size: 20px;
+  font-size: 22px;
+  font-weight: bold;
   color: #ff0033;
 }
 
+.nav-links a {
+  margin-right: 20px;
+  color: #aaa;
+  text-decoration: none;
+}
+
+.nav-links a.active,
+.nav-links a:hover {
+  color: #ff0033;
+}
+
+.top-right button {
+  margin-left: 10px;
+}
+
+/* ===========================
+   MAIN LAYOUT
+=========================== */
 .main-layout {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -26,27 +86,286 @@ body {
 
 .panel {
   background: #111;
-  padding: 12px;
+  padding: 16px;
   border-radius: 6px;
-  border: 1px solid #333;
+  border: 1px solid #222;
 }
 
+/* ===========================
+   FEATURED CARD
+=========================== */
+.featured-card {
+  display: flex;
+  background: #222;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.featured-card img {
+  width: 160px;
+  height: 110px;
+  object-fit: cover;
+}
+
+.featured-info {
+  padding: 10px;
+}
+
+/* ===========================
+   SIMPLE LISTS
+=========================== */
+.simple-list {
+  list-style: none;
+  margin-top: 10px;
+}
+
+.simple-list li {
+  padding: 6px 0;
+  border-bottom: 1px solid #222;
+}
+
+/* ===========================
+   AI BOX
+=========================== */
+.ai-box {
+  background: #222;
+  padding: 12px;
+  border-radius: 6px;
+}
+
+.ai-output {
+  background: #111;
+  padding: 10px;
+  height: 120px;
+  overflow-y: auto;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.ai-input-row {
+  display: flex;
+  gap: 10px;
+}
+
+/* ===========================
+   GAMES GRID
+=========================== */
 .games-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-  gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 12px;
+  margin-top: 10px;
 }
 
 .game-card {
   background: #222;
-  padding: 8px;
+  padding: 10px;
   border-radius: 6px;
+  text-align: center;
+  border: 1px solid #333;
+}
+
+.game-card img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.game-card button {
+  margin-top: 8px;
+  width: 100%;
+}
+
+/* ===========================
+   CATEGORY CHIPS
+=========================== */
+.chips {
+  margin: 10px 0;
+}
+
+.chip {
+  background: #222;
+  border: 1px solid #333;
+  padding: 6px 12px;
+  border-radius: 20px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.chip.active {
+  background: #ff0033;
+  border-color: #ff0033;
+}
+
+/* ===========================
+   VIEWER
+=========================== */
+.viewer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  z-index: 9999;
+}
+
+.viewer-hidden {
+  display: none;
+}
+
+.viewer-header {
+  background: #111;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.viewer-actions button,
+.viewer-actions select {
+  margin-left: 8px;
+}
+
+#viewer-frame {
+  flex: 1;
+  width: 100%;
+  background: #000;
+}
+
+/* ===========================
+   OS MODE
+=========================== */
+.os {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  z-index: 9998;
+}
+
+.os-hidden {
+  display: none;
+}
+
+.os-topbar {
+  background: #111;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.os-logo {
+  color: #ff0033;
+  font-weight: bold;
+}
+
+.os-desktop {
+  padding: 20px;
+  display: flex;
+  gap: 30px;
+}
+
+.os-icon {
+  text-align: center;
+  cursor: pointer;
+}
+
+.os-icon-img {
+  font-size: 40px;
+}
+
+.os-dock {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #111;
+  padding: 10px 20px;
+  border-radius: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+/* ===========================
+   LOCKDOWN
+=========================== */
+#lockdown-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.95);
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lockdown-hidden {
+  display: none;
+}
+
+.lockdown-box {
+  background: #111;
+  padding: 20px;
+  border-radius: 6px;
+  text-align: center;
+  border: 1px solid #333;
+}
+
+.lockdown-popup {
+  background: #111;
+  padding: 20px;
+  border-radius: 6px;
+  border: 1px solid #333;
+  margin-top: 20px;
+}
+
+.lockdown-popup-hidden {
+  display: none;
+}
+
+/* ===========================
+   LOADING SCREEN
+=========================== */
+#loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  z-index: 20000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loading-box {
   text-align: center;
 }
 
-.game-thumb {
-  width: 100%;
-  height: 80px;
-  object-fit: cover;
-  border-radius: 4px;
+.loading-bar {
+  width: 300px;
+  height: 10px;
+  background: #222;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+#loading-fill {
+  width: 0%;
+  height: 100%;
+  background: #ff0033;
+  transition: width 1s linear;
 }
