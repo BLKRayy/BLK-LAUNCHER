@@ -2,28 +2,154 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>BLK Launcher – Minimal Build</title>
+  <title>BLK Launcher</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- Loading -->
+  <div id="loading-screen">
+    <div class="loading-box">
+      <div class="loading-bar">
+        <div id="loading-fill"></div>
+      </div>
+      <p>Booting BLK Launcher...</p>
+    </div>
+  </div>
 
+  <!-- Lockdown -->
+  <div id="lockdown-overlay" class="lockdown-hidden">
+    <div class="lockdown-box">
+      <h1>BLK Launcher Locked</h1>
+      <p id="lockdown-message"></p>
+      <p>Time remaining: <span id="lockdown-timer">--:--:--</span></p>
+      <button id="lockdown-admin-button">Admin Unlock</button>
+    </div>
+    <div id="lockdown-admin-popup" class="lockdown-popup lockdown-popup-hidden">
+      <h2>Admin Unlock</h2>
+      <input type="password" id="lockdown-admin-password" placeholder="Admin password" />
+      <p id="lockdown-admin-error" class="error"></p>
+      <div class="popup-actions">
+        <button id="lockdown-admin-cancel">Cancel</button>
+        <button id="lockdown-admin-submit">Unlock</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Top bar -->
   <header class="top-bar">
     <div class="logo">BLK Launcher</div>
+    <nav class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="games.html">Games</a>
+      <a href="favorites.html">Favorites</a>
+      <a href="admin.html">Admin</a>
+    </nav>
+    <div class="top-right">
+      <select id="profile-select"></select>
+      <button id="profile-new-btn">+ Profile</button>
+      <button id="os-mode-btn">OS Mode</button>
+    </div>
   </header>
 
   <main class="main-layout">
+    <!-- Left: Featured + stats -->
     <section class="panel">
-      <h2>Welcome</h2>
-      <p>This is the minimal build. If you can see this, the site is loading correctly.</p>
-      <button id="test-btn">Run JS Test</button>
-      <p id="test-output"></p>
+      <h2>Featured</h2>
+      <div class="featured-card">
+        <img id="featured-thumb" src="" alt="Featured" />
+        <div class="featured-info">
+          <h3 id="featured-title">Loading...</h3>
+          <p id="featured-desc"></p>
+          <button id="featured-play">Play</button>
+        </div>
+      </div>
+
+      <h2>Recently Played</h2>
+      <ul id="recently-played" class="simple-list"></ul>
+
+      <h2>Top Games</h2>
+      <ul id="top-games" class="simple-list"></ul>
     </section>
 
+    <!-- Right: BLK AI + quests -->
     <section class="panel">
-      <h2>Games</h2>
-      <div id="games-list" class="games-grid"></div>
+      <h2>BLK AI Assistant</h2>
+      <div class="ai-box">
+        <div id="ai-output" class="ai-output">
+          BLK AI v2 ready. Try:
+          <br>- "recommend a game like slope"
+          <br>- "show me racing games"
+          <br>- "what is my most played game"
+        </div>
+        <div class="ai-input-row">
+          <input id="ai-input" placeholder="Type a command..." />
+          <button id="ai-run-btn">Run</button>
+        </div>
+      </div>
+
+      <h2>Daily Quests</h2>
+      <p class="hint">Quests are tracked automatically while you play.</p>
+      <ul id="daily-quests" class="simple-list"></ul>
     </section>
   </main>
+
+  <!-- Game Viewer -->
+  <div id="game-viewer" class="viewer viewer-hidden">
+    <div class="viewer-header">
+      <span id="viewer-title">Playing...</span>
+      <span id="viewer-session-time">00:00:00</span>
+      <div class="viewer-actions">
+        <button id="viewer-fav-btn">☆ Favorite</button>
+        <select id="viewer-save-slot">
+          <option value="1">Slot 1</option>
+          <option value="2">Slot 2</option>
+          <option value="3">Slot 3</option>
+        </select>
+        <button id="viewer-save-btn">Save</button>
+        <button id="viewer-load-btn">Load</button>
+        <button id="viewer-fullscreen-btn">Fullscreen</button>
+        <button id="viewer-close-btn">Close</button>
+      </div>
+    </div>
+    <iframe id="viewer-frame" src="" frameborder="0"></iframe>
+  </div>
+
+  <!-- OS Mode -->
+  <div id="os-mode" class="os os-hidden">
+    <div class="os-topbar">
+      <span class="os-logo">BLK OS</span>
+      <input id="os-search-input" placeholder="Ask BLK AI..." />
+      <span id="os-clock"></span>
+      <button id="os-exit-btn">Exit OS</button>
+    </div>
+    <div class="os-desktop">
+      <div class="os-icon" data-open="games">
+        <div class="os-icon-img">🎮</div>
+        <div class="os-icon-label">Games</div>
+      </div>
+      <div class="os-icon" data-open="favorites">
+        <div class="os-icon-img">⭐</div>
+        <div class="os-icon-label">Favorites</div>
+      </div>
+      <div class="os-icon" data-open="ai">
+        <div class="os-icon-img">🤖</div>
+        <div class="os-icon-label">BLK AI</div>
+      </div>
+      <div class="os-icon" data-open="admin">
+        <div class="os-icon-img">🛠</div>
+        <div class="os-icon-label">Admin</div>
+      </div>
+      <div class="os-icon" data-open="settings">
+        <div class="os-icon-img">⚙</div>
+        <div class="os-icon-label">Settings</div>
+      </div>
+    </div>
+    <div class="os-dock">
+      <button id="os-open-games">Games</button>
+      <button id="os-open-favs">Favorites</button>
+      <button id="os-open-ai">AI</button>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
