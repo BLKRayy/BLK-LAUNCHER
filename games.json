@@ -1,122 +1,14 @@
 [
   {
-    "id": "drift-hunters",
-    "title": "Drift Hunters",
-    "description": "High-speed drifting and car tuning.",
-    "url": "https://mathadventure1.github.io/drift-hunters/",
-    "thumbnail": "https://via.placeholder.com/300x200?text=Drift+Hunters",
-    "category": "racing"
+    "id": "test1",
+    "title": "Test Game 1",
+    "description": "This is a test game.",
+    "thumbnail": "https://via.placeholder.com/300x200?text=Game+1"
   },
   {
-    "id": "moto-x3m",
-    "title": "Moto X3M",
-    "description": "Fast-paced motorcycle stunt racing.",
-    "url": "https://ubg100.github.io/moto-x3m/",
-    "thumbnail": "https://via.placeholder.com/300x200?text=Moto+X3M",
-    "category": "racing"
-  },
-  {
-    "id": "madalin-stunt-cars-3",
-    "title": "Madalin Stunt Cars 3",
-    "description": "Open-world supercar stunt driving.",
-    "url": "https://sites.google.com/site/unblockedgame76/madalin-stunt-cars-3",
-    "thumbnail": "https://via.placeholder.com/300x200?text=Madalin+Stunt+Cars+3",
-    "category": "racing"
-  },
-  {
-    "id": "1v1lol",
-    "title": "1v1.LOL",
-    "description": "Build-and-shoot competitive 1v1 battles.",
-    "url": "https://1v1lolunblocked.github.io/",
-    "thumbnail": "https://via.placeholder.com/300x200?text=1v1.LOL",
-    "category": "action"
-  },
-  {
-    "id": "shell-shockers",
-    "title": "Shell Shockers",
-    "description": "Multiplayer egg-themed FPS shooter.",
-    "url": "https://shellshockersunblocked.github.io/",
-    "thumbnail": "https://via.placeholder.com/300x200?text=Shell+Shockers",
-    "category": "action"
-  },
-  {
-    "id": "zombs-royale",
-    "title": "Zombs Royale",
-    "description": "2D battle royale with fast-paced action.",
-    "url": "https://zombsroyaleunblocked.github.io/",
-    "thumbnail": "https://via.placeholder.com/300x200?text=Zombs+Royale",
-    "category": "action"
-  },
-  {
-    "id": "krunker",
-    "title": "Krunker",
-    "description": "Fast-paced pixel FPS shooter.",
-    "url": "https://krunkerio.org.uk/",
-    "thumbnail": "https://via.placeholder.com/300x200?text=Krunker",
-    "category": "action"
-  },
-  {
-    "id": "retro-bowl",
-    "title": "Retro Bowl",
-    "description": "Retro-style American football management.",
-    "url": "https://retro-bowl.io/",
-    "thumbnail": "https://via.placeholder.com/300x200?text=Retro+Bowl",
-    "category": "sports"
-  },
-  {
-    "id": "basketball-stars",
-    "title": "Basketball Stars",
-    "description": "1v1 basketball with power-ups.",
-    "url": "https://basketball-stars.co/",
-    "thumbnail": "https://via.placeholder.com/300x200?text=Basketball+Stars",
-    "category": "sports"
-  },
-  {
-    "id": "2048",
-    "title": "2048",
-    "description": "Classic sliding number puzzle.",
-    "url": "https://play2048.co/",
-    "thumbnail": "https://via.placeholder.com/300x200?text=2048",
-    "category": "puzzle"
-  },
-  {
-    "id": "slope",
-    "title": "Slope",
-    "description": "Fast-paced downhill ball game.",
-    "url": "https://slopegame.online/",
-    "thumbnail": "https://via.placeholder.com/300x200?text=Slope",
-    "category": "puzzle"
-  },
-  {
-    "id": "run-3",
-    "title": "Run 3",
-    "description": "Endless running through space tunnels.",
-    "url": "https://run3.io/",
-    "thumbnail": "https://via.placeholder.com/300x200?text=Run+3",
-    "category": "puzzle"
-  },
-  {
-    "id": "cookie-clicker",
-    "title": "Cookie Clicker",
-    "description": "Addictive incremental clicking game.",
-    "url": "https://cookieclicker.ee/",
-    "thumbnail": "https://via.placeholder.com/300x200?text=Cookie+Clicker",
-    "category": "puzzle"
-  },
-  {
-    "id": "tetris",
-    "title": "Tetris",
-    "description": "Classic falling-block puzzle game.",
-    "url": "https://tetrisunblocked.org/",
-    "thumbnail": "https://via.placeholder.com/300x200?text=Tetris",
-    "category": "retro"
-  },
-  {
-    "id": "pacman",
-    "title": "Pac-Man",
-    "description": "Classic maze-chase arcade game.",
-    "url": "https://pacman-easy.github.io/",
-    "thumbnail": "https://via.placeholder.com/300x200?text=Pac-Man",
-    "category": "retro"
+    "id": "test2",
+    "title": "Test Game 2",
+    "description": "Another test game.",
+    "thumbnail": "https://via.placeholder.com/300x200?text=Game+2"
   }
 ]
