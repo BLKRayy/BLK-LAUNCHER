@@ -1,14 +1,162 @@
 [
   {
-    "id": "test1",
-    "title": "Test Game 1",
-    "description": "This is a test game.",
-    "thumbnail": "https://via.placeholder.com/300x200?text=Game+1"
+    "id": "slope",
+    "title": "Slope",
+    "description": "Fast 3D downhill reflex game.",
+    "thumbnail": "https://3kh0.github.io/slope/icon.png",
+    "url": "https://3kh0.github.io/slope/",
+    "category": "action"
   },
   {
-    "id": "test2",
-    "title": "Test Game 2",
-    "description": "Another test game.",
-    "thumbnail": "https://via.placeholder.com/300x200?text=Game+2"
+    "id": "1v1lol",
+    "title": "1v1.lol",
+    "description": "Build and battle in this fast-paced shooter.",
+    "thumbnail": "https://3kh0.github.io/1v1-lol/icon.png",
+    "url": "https://3kh0.github.io/1v1-lol/",
+    "category": "action"
+  },
+  {
+    "id": "retrobowl",
+    "title": "Retro Bowl",
+    "description": "Classic-style American football management.",
+    "thumbnail": "https://3kh0.github.io/retro-bowl/icon.png",
+    "url": "https://3kh0.github.io/retro-bowl/",
+    "category": "sports"
+  },
+  {
+    "id": "retrobowlc",
+    "title": "Retro Bowl College",
+    "description": "College edition of the Retro Bowl classic.",
+    "thumbnail": "https://3kh0.github.io/retro-bowl-college/icon.png",
+    "url": "https://3kh0.github.io/retro-bowl-college/",
+    "category": "sports"
+  },
+  {
+    "id": "basketballstars",
+    "title": "Basketball Stars",
+    "description": "Fast-paced 1v1 basketball game.",
+    "thumbnail": "https://3kh0.github.io/basketball-stars/icon.png",
+    "url": "https://3kh0.github.io/basketball-stars/",
+    "category": "sports"
+  },
+  {
+    "id": "drifthunters",
+    "title": "Drift Hunters",
+    "description": "Realistic drifting physics and car tuning.",
+    "thumbnail": "https://3kh0.github.io/drift-hunters/icon.png",
+    "url": "https://3kh0.github.io/drift-hunters/",
+    "category": "racing"
+  },
+  {
+    "id": "subwaysurfers",
+    "title": "Subway Surfers",
+    "description": "Endless runner classic.",
+    "thumbnail": "https://3kh0.github.io/subway-surfers/icon.png",
+    "url": "https://3kh0.github.io/subway-surfers/",
+    "category": "action"
+  },
+  {
+    "id": "ovo",
+    "title": "OvO",
+    "description": "Precision platformer with parkour mechanics.",
+    "thumbnail": "https://3kh0.github.io/ovo/icon.png",
+    "url": "https://3kh0.github.io/ovo/",
+    "category": "action"
+  },
+  {
+    "id": "bitlife",
+    "title": "BitLife",
+    "description": "Life simulation game with endless choices.",
+    "thumbnail": "https://3kh0.github.io/bitlife/icon.png",
+    "url": "https://3kh0.github.io/bitlife/",
+    "category": "simulation"
+  },
+  {
+    "id": "brain-test",
+    "title": "Brain Test",
+    "description": "Tricky puzzles and brain teasers.",
+    "thumbnail": "https://3kh0.github.io/brain-test/icon.png",
+    "url": "https://3kh0.github.io/brain-test/",
+    "category": "puzzle"
+  },
+  {
+    "id": "burritobison",
+    "title": "Burrito Bison",
+    "description": "Launch, smash, and upgrade in this fun arcade game.",
+    "thumbnail": "https://3kh0.github.io/burrito-bison/icon.png",
+    "url": "https://3kh0.github.io/burrito-bison/",
+    "category": "action"
+  },
+  {
+    "id": "drawcircle",
+    "title": "Draw a Perfect Circle",
+    "description": "Try to draw the perfect circle.",
+    "thumbnail": "https://3kh0.github.io/draw-a-perfect-circle/icon.png",
+    "url": "https://3kh0.github.io/draw-a-perfect-circle/",
+    "category": "puzzle"
+  },
+  {
+    "id": "bottleflip",
+    "title": "Bottle Flip",
+    "description": "Flip the bottle and land it perfectly.",
+    "thumbnail": "https://3kh0.github.io/bottle-flip/icon.png",
+    "url": "https://3kh0.github.io/bottle-flip/",
+    "category": "arcade"
+  },
+  {
+    "id": "motox3m",
+    "title": "Moto X3M",
+    "description": "Motorcycle stunt racing with crazy tracks.",
+    "thumbnail": "https://3kh0.github.io/moto-x3m/icon.png",
+    "url": "https://3kh0.github.io/moto-x3m/",
+    "category": "racing"
+  },
+  {
+    "id": "run3",
+    "title": "Run 3",
+    "description": "Endless running in space tunnels.",
+    "thumbnail": "https://3kh0.github.io/run-3/icon.png",
+    "url": "https://3kh0.github.io/run-3/",
+    "category": "action"
+  },
+  {
+    "id": "cookieclicker",
+    "title": "Cookie Clicker",
+    "description": "The classic incremental clicker game.",
+    "thumbnail": "https://3kh0.github.io/cookie-clicker/icon.png",
+    "url": "https://3kh0.github.io/cookie-clicker/",
+    "category": "idle"
+  },
+  {
+    "id": "geometrydash",
+    "title": "Geometry Dash",
+    "description": "Jump and fly through danger in this rhythm-based game.",
+    "thumbnail": "https://3kh0.github.io/geometry-dash/icon.png",
+    "url": "https://3kh0.github.io/geometry-dash/",
+    "category": "action"
+  },
+  {
+    "id": "cuttherope",
+    "title": "Cut the Rope",
+    "description": "Feed candy to Om Nom by cutting ropes.",
+    "thumbnail": "https://3kh0.github.io/cut-the-rope/icon.png",
+    "url": "https://3kh0.github.io/cut-the-rope/",
+    "category": "puzzle"
+  },
+  {
+    "id": "ducklife4",
+    "title": "Duck Life 4",
+    "description": "Train your duck and compete in races.",
+    "thumbnail": "https://3kh0.github.io/duck-life-4/icon.png",
+    "url": "https://3kh0.github.io/duck-life-4/",
+    "category": "simulation"
+  },
+  {
+    "id": "idlebreakout",
+    "title": "Idle Breakout",
+    "description": "Break bricks, upgrade balls, and automate everything.",
+    "thumbnail": "https://3kh0.github.io/idle-breakout/icon.png",
+    "url": "https://3kh0.github.io/idle-breakout/",
+    "category": "idle"
   }
 ]
