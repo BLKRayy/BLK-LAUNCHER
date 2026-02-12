@@ -1,7 +1,4 @@
-// Emergency reset
-if (location.search.includes("reset=1")) {
-  localStorage.removeItem("blk_lockdown");
-}
+localStorage.clear();
 
 // BLK Launcher – main script
 
